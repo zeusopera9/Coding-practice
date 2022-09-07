@@ -1,61 +1,61 @@
 #include<stdio.h>
 
 
-void sum(double p, double q, double r, double s)
+void sum(int p, int q, int r, int s)
 {
-    double real = p + r;
-    double img = q + s;
+    int real = p + r;
+    int img = q + s;
     
     if(img < 0)
     {
-        printf("The sum of the complex numbers is: %f  %f i", real, img);
+        printf("The sum of the complex numbers is: %d  %d i", real, img);
     }
     else
     {
-        printf("The sum of the complex numbers is: %f + %f i ", real, img);
+        printf("The sum of the complex numbers is: %d + %d i ", real, img);
     }
 }
 
-void sub(double p, double q, double r, double s)
+void sub(int p, int q, int r, int s)
 {
-    double real = p - r;
-    double img = q - s;
+    int real = p - r;
+    int img = q - s;
     
     if(img < 0)
     {
-        printf("The sum of the complex numbers is: %f %f i", real, img);
+        printf("The sum of the complex numbers is: %d %d i", real, img);
     }
     else
     {
-        printf("The sum of the complex numbers is: %f + %f i ", real, img);
+        printf("The sum of the complex numbers is: %d + %d i ", real, img);
     }
 }
 
-void multiply(double p, double q, double r, double s)
+void multiply(int p, int q, int r, int s)
 {
-    double real = (p * r) - (q * s);
-    double img = (p * s) + (q * r);
+    int real = (p * r) - (q * s);
+    int img = (p * s) + (q * r);
     if(img < 0)
     {
-        printf("The product of the complex numbers is: %f %f i", real, img);
+        printf("The product of the complex numbers is: %d %d i", real, img);
     }
     else
     {
-        printf("The product of the complex numbers is: %f + %f i ", real, img);
+        printf("The product of the complex numbers is: %d + %d i ", real, img);
     }
 }
 
-void div(double p, double q, double r, double s)
+void div(int p, int q, int r, int s)
 {
-    double real = ((p * r) + (q * s))/((r * r) + (s * s));
-    double img = ((q * r) - (p * s))/((r * r) + (s * s));
+    int real = ((p * r) + (q * s))/((r * r) + (s * s));
+    int img = ((q * r) - (p * s))/((r * r) + (s * s));
     if(img < 0)
     {
-        printf("The division of the complex numbers is: %f %f i", real, img);
+        printf("The division of the complex numbers is: %d %d i", real, img);
     }
     else
     {
-        printf("The division of the complex numbers is: %f + %f i ", real, img);
+        printf("The division of the complex numbers is: %d + %d i ", real, img);
     }
 }
 
@@ -64,28 +64,28 @@ int main()
 {
     //Get two complex numbers to be added
     
-    double a,b;
+    int a,b;
     
     printf("Enter Real Part of First Number: ");
-    scanf("%f", &a);
+    scanf("%d", &a);
     
     printf("Enter Imaginary Part of First Number: ");
-    scanf("%f", &b);
+    scanf("%d", &b);
     
     //Storing values for Complex Number
-    double r1 = a;
-    double i1 = b;
+    int r1 = a;
+    int i1 = b;
     
     
     printf("Enter Real Part of Second Number: ");
-    scanf("%f", &a);
+    scanf("%d", &a);
     
     printf("Enter Imaginary Part of Second Number: ");
-    scanf("%f", &b);
+    scanf("%d", &b);
     
     //Storing values for Complex Number
-    double r2 = a;
-    double i2 = b;
+    int r2 = a;
+    int i2 = b;
     
     int choice = 0;
     printf("Program to offer the following functionalities: \n");
