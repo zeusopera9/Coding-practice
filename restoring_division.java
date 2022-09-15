@@ -36,14 +36,14 @@ class calc
         }
         while(decimal2 > 0)
         {
-            dvd[j] = decimal2 % 2;
+            dvs[j] = decimal2 % 2;
             decimal2 = decimal2 / 2;
             j++;
         }
     }
-    int r_dvd
+    int[] r_dvd()
     {
-        
+        return dvd;
     }
 
 }
